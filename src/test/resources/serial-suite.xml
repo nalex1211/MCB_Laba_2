@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SerialSuite">
+    <test name="SerialExecution">
+        <groups>
+            <run>
+                <include name="basicTests"/>
+                <exclude name="exceptionTests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.JsonParserTest"/>
+        </classes>
+    </test>
+</suite>
